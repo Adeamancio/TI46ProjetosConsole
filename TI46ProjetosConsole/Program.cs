@@ -10,8 +10,40 @@ namespace TI46ProjetosConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!!!");
-            Console.WriteLine("Teste, linha 2");
+            string Nome;
+
+            decimal Nota1, Nota2, Nota3, Nota4, Resultado;
+
+            {
+                Console.WriteLine("Digite seu nome :", "\n");
+                Nome = Console.ReadLine();
+                Console.WriteLine("Seja bem vindo, ", Nome, "\n");
+            }
+
+            {
+                Console.WriteLine("Digite as notas do aluno ", Nome, "\n");
+                Nota1 = decimal.Parse(Console.ReadLine());
+                Nota2 = decimal.Parse(Console.ReadLine());
+                Nota3 = decimal.Parse(Console.ReadLine());
+                Nota4 = decimal.Parse(Console.ReadLine());
+                    
+            }
+
+            {
+                Resultado = (Nota1 + Nota2 + Nota3 + Nota4) / 4;
+
+                Console.WriteLine("O aluno teve média final: "+Resultado+"\n");
+            }
+
+
+            Console.ReadKey();
+
+
+            
+                 
+
+
+
         }
     }
 }
